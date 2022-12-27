@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaPostman.Console", "KafkaPostman.Console\KafkaPostman.Console.csproj", "{B199A283-42F7-4FC9-A8D6-6FA8780AFF17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaPostman", "KafkaPostman\KafkaPostman.csproj", "{8B593551-FA2E-4F98-8D72-F36D25A4E1A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaPostman.KafkaFlow", "KafkaPostman.KafkaFlow\KafkaPostman.KafkaFlow.csproj", "{6DAD6A32-02EC-46AE-B6BB-AAC695E4E2D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B199A283-42F7-4FC9-A8D6-6FA8780AFF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B199A283-42F7-4FC9-A8D6-6FA8780AFF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B199A283-42F7-4FC9-A8D6-6FA8780AFF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B199A283-42F7-4FC9-A8D6-6FA8780AFF17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B593551-FA2E-4F98-8D72-F36D25A4E1A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B593551-FA2E-4F98-8D72-F36D25A4E1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B593551-FA2E-4F98-8D72-F36D25A4E1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B593551-FA2E-4F98-8D72-F36D25A4E1A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DAD6A32-02EC-46AE-B6BB-AAC695E4E2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DAD6A32-02EC-46AE-B6BB-AAC695E4E2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DAD6A32-02EC-46AE-B6BB-AAC695E4E2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DAD6A32-02EC-46AE-B6BB-AAC695E4E2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

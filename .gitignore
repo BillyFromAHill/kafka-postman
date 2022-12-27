@@ -1,0 +1,111 @@
+
+# Files for storing local dev-specific settings
+/Apps/App.Startup/settings/local.yaml
+*Settings.local.json
+
+# Ignore build marker
+.ok/
+
+# Mac-related stuff
+._.DS_Store/
+.DS_Store/
+*.DS_Store
+
+# Visual Studio cache/options directory
+.vs/
+
+# JetBrains Rider config folder
+.idea/
+
+# Visual Studio Code workspace folder
+**/.vscode/**
+!/Clients/*/.vscode/extensions.json
+!/Clients/*/.vscode/launch.json
+!/Clients/*/.vscode/settings.json
+!/Clients/*/.vscode/tasks.json
+
+# NuGet packages folder
+packages/
+!/Clients/Web/packages/
+
+# Speical front-end rules
+/Clients/Web/.favorites.json
+*.less.d.ts
+*.css.d.ts
+
+# TODO: Not sure where these rules come from, maybe we should delete them
+.settings/
+refs/
+
+# Node.js
+node_modules/
+node_modules_tmp/
+
+# Python
+__pycache__/
+*.pyc
+
+# Ignore .orig files (original revisions written by Git on merge conflicts)
+*.orig
+
+# Ignore specific folders
+/Build/logs/
+/Build/DeploymentStatus/packages
+/Build/DeploymentStatus/App_Data
+/Mobile/bld/
+ImageCache/
+/Etl/Etl.Build
+/Etl/Etl.Api/App_Data
+/Mobile/platforms
+
+# Ignore thumbnails created by Windows
+Thumbs.db
+
+# Ignore files built by Visual Studio
+[Bb]in/
+obj/
+csx/
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.cache
+*.ilk
+*.log
+*.sbr
+
+# Tools
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+.sass-cache/
+
+# Accounting
+/Modules/Accounting.Tests/Integration/QBDCompanyFiles/*.QBW.*
+/Modules/Accounting.Tests/Integration/Tests/*.feature.cs
+
+# Snapshooter mismatched snapshots
+**/__mismatch__/**
+
+# Binlog of msbuild
+*.binlog
+/CodeGraphData
+
+# .NET Core
+/artifacts/
+/**/launchSettings.json
+User.Directory.Build.props
+/applicationhost.config
+
+/Dockerfile.buildcontext
+*.bat
+tmp/
+/Modules/AdminPortal/TenantManagement.Api/ClientGenerator/GeneratedTenantManagementApiClient.cs
+/Modules/AdminPortal/DataTools.Api/ClientGenerator/GeneratedDataToolsApiClient.cs
+*.received.*
