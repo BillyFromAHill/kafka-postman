@@ -7,8 +7,9 @@ public class ProtobufAssembly
     public ProtobufAssembly(Assembly typesAssembly)
     {
         TypesAssembly = typesAssembly;
-        
-        // TODO: Extract proto types here
+
+        // TODO: Right extract proto type here
+        MessageTypes = typesAssembly.ExportedTypes.Skip(1).ToList();
     }
     
     public Assembly TypesAssembly { get; }

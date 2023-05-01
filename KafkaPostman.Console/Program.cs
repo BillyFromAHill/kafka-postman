@@ -57,7 +57,7 @@ static class Program
             var protoString = File.ReadAllText(protoFilePath);
 
             var protobufAssembly = protobufCompiler.CompileProtobufAsync(protoString, CancellationToken.None)
-                .GetAwaiter().GetResult();
+                .Result;
 
             // TODO: get this type by name
             var messageType = protobufAssembly.MessageTypes.First();

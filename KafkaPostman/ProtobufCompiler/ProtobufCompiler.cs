@@ -114,8 +114,11 @@ public class ProtobufCompiler : IProtobufCompiler
                 }
 
                 errorMessage = sb.ToString();
+                
+                _logger.LogError(errorMessage + csharpCode);
 
-                return null;
+                // TODO: replace with a proper exception
+                throw new ArgumentException(errorMessage);
             }
 
             assembly = Assembly.Load(((MemoryStream)codeStream).ToArray());
@@ -142,7 +145,7 @@ public class ProtobufCompiler : IProtobufCompiler
     {
         var tempPath = $"{Path.GetTempPath()}KafkaPostman\\{Guid.NewGuid()}";
         Directory.CreateDirectory(tempPath);
-        var protoFileName = Path.Combine(tempPath, $"{Guid.NewGuid()}.proto");
+        var protoFileName = Path.Combine(tempPath, $"Proto_{Guid.NewGuid()}.proto");
 
         await File.WriteAllTextAsync(protoFileName, protoSchema, cancellationToken);
         var codeDirectory = $"{tempPath}\\cs";

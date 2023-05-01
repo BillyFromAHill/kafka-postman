@@ -10,7 +10,7 @@ public class SenderBackgroundService : BackgroundService
     {
         _jsonPostman = jsonPostman;
     }
-    
+
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
